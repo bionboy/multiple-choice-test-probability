@@ -46,7 +46,6 @@ def toPercent(num) -> str:
 
 def setupArgParser() -> Namespace:
     parser = ArgumentParser(description=PROMPT)
-    # parser.add_argument('-answer-type', metavar='A', type=str, default='last', choices=[
     parser.add_argument('-answer-type', metavar='A', type=str, default='random', choices=[
                         'last', 'random'], help='Which choice is correct for each question')
     # parser.add_argument('-trials', metavar='T', type=int, default=130000000, # Max size for last
